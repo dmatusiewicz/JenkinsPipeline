@@ -10,4 +10,4 @@ pipeline.setBranch("TestBranchName")
 
 println pipeline.getBranch()
 
-println ${env.BRANCH_NAME}
+println env.BRANCH_NAME
