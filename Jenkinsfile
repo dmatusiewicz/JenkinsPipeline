@@ -1,4 +1,4 @@
-import common.*
+@Library('Common')
 
 pipelineLoader.init()
 println env.WORKSPACE
