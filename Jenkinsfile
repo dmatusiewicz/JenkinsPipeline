@@ -1,4 +1,5 @@
 load 'Pipeline.groovy'
+println env.WORKSPACE
 pipeline = new Pipeline()
 pipeline.setBranch("TestBranchName")
 println pipeline.getBranch()
