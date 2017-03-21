@@ -1,6 +1,5 @@
 @Library('Common')
 
-pipelineLoader.init()
 println env.WORKSPACE
 pipeline = new Pipeline()
 // pipeline.setBranch("TestBranchName")
