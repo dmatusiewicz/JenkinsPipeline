@@ -1,4 +1,5 @@
 @Library('Common') _
+import common.Pipeline
 
 println env.WORKSPACE
 pipeline = new Pipeline()
