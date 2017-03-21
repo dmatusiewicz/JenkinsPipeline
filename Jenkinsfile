@@ -1,4 +1,6 @@
-def pipelineLoader = load 'Pipeline.groovy'
+@Library('Common')
+import common.Pipeline
+
 pipelineLoader.init()
 println env.WORKSPACE
 pipeline = new Pipeline()

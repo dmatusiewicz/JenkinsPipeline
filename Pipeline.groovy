@@ -1,3 +1,0 @@
-class Pipeline {
-  String branch
-}
