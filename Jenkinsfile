@@ -1,4 +1,4 @@
-import Pipeline
+import general.Pipeline
 println env.WORKSPACE
 pipeline = new Pipeline()
 // pipeline.setBranch("TestBranchName")
