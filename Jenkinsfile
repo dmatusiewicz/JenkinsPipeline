@@ -10,7 +10,4 @@ pipeline.setBranch("TestBranchName")
 
 println pipeline.getBranch()
 
-def env = System.getenv()
-env.each{
-  println it
-}
+println ${env.BRANCH_NAME}
