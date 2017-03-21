@@ -1,4 +1,4 @@
-@Library('Common')
+@Library('Common') _
 
 println env.WORKSPACE
 pipeline = new Pipeline()
