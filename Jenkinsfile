@@ -1,4 +1,5 @@
-import general.Pipeline
+def pipelineLoader = load 'Pipeline.groovy'
+pipelineLoader.init()
 println env.WORKSPACE
 pipeline = new Pipeline()
 // pipeline.setBranch("TestBranchName")
