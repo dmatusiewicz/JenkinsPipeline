@@ -4,5 +4,11 @@ import common.Pipeline
 println env.WORKSPACE
 pipeline = new Pipeline()
 pipeline.setBranch("TestBranchName")
-println pipeline.getBranch()
+
 println env.BRANCH_NAME
+
+node {
+  wrap([$class: 'TimestamperBuildWrapper']) {
+    println pipeline.getBranch()
+  }
+}
