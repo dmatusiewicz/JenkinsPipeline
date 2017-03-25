@@ -1,7 +1,8 @@
 @Library('Common') _
 import common.Pipeline
 
-pipeline = new Pipeline()
+@NonCPS
+def pipeline = new Pipeline()
 pipeline.setBranch("TestBranchName")
 println pipeline.getBranch()
 
