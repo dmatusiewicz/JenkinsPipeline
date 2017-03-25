@@ -1,5 +1,5 @@
 @Library('Common') _
-import main.groovy.common.Pipeline
+import common.Pipeline
 
 println env.WORKSPACE
 pipeline = new Pipeline()
