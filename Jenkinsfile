@@ -1,8 +1,8 @@
 // @Library('Common') _
 // import common.Pipeline
 
-
-class Pipeline2 {
+@groovy.transform.Synchronized
+class Pipeline2 implements Serializable {
   String branch
 }
 
