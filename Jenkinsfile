@@ -2,11 +2,11 @@
 import com.github.dmatusiewcz.jenkins.pipeline.common.*
 
 def pipeline = new Pipeline()
-pipeline.setBranch("TestBranchName")
-println pipeline.getBranch()
 
 node {
   wrap([$class: 'TimestamperBuildWrapper']) {
-    pipeline.getRepo('4768b2b5-75fe-4da2-a71e-a15f954684eb','https://github.com/dmatusiewicz/CommonPipelineLibrary')
+    pipeline.setBranch("TestBranchName")
+    println pipeline.getBranch()
+    // pipeline.getRepo('4768b2b5-75fe-4da2-a71e-a15f954684eb','https://github.com/dmatusiewicz/CommonPipelineLibrary')
   }
 }
