@@ -2,6 +2,7 @@
 // import common.Pipeline
 
 @groovy.transform.AutoClone
+@EqualsAndHashCode 
 class Pipeline2 implements Serializable {
   String branch
 }
