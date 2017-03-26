@@ -1,16 +1,12 @@
 @Library('Common') _
 import com.github.dmatusiewcz.jenkins.pipeline.common.*
 
-
 def pipeline = new Pipeline()
 pipeline.setBranch("TestBranchName")
 println pipeline.getBranch()
 
 node {
   wrap([$class: 'TimestamperBuildWrapper']) {
-    wrap([$class: 'AnsiColorBuildWrapper', colorMapName: 'xterm']) {
-      println "test01"
-      println pipeline.getBranch()
-    }
+    pipeline.getRepo('4768b2b5-75fe-4da2-a71e-a15f954684eb','https://github.com/dmatusiewicz/CommonPipelineLibrary')
   }
 }
