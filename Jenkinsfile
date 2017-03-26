@@ -1,5 +1,5 @@
 @Library('github.com/dmatusiewicz/CommonPipelineLibrary@master')
-import com.github.dmatusiewcz.jenkins.pipeline.common.Utils
+import static com.github.dmatusiewcz.jenkins.pipeline.common.Utils
 import com.github.dmatusiewcz.jenkins.pipeline.common.Pipeline
 
 def pipeline = new Pipeline()
