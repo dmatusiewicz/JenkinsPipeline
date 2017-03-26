@@ -8,7 +8,9 @@ println pipeline.getBranch()
 
 node {
   wrap([$class: 'TimestamperBuildWrapper']) {
-    println "test01"
-    println pipeline.getBranch()
+    wrap([$class: 'AnsiColorBuildWrapper', colorMapName: 'xterm']) {
+      println "test01"
+      println pipeline.getBranch()
+    }
   }
 }
