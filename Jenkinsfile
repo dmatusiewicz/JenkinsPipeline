@@ -7,6 +7,8 @@ pipeline.setBranch("TestBranchName")
 println pipeline.getBranch()
 
 node {
-  println "test01"
-  println pipeline.getBranch()
+  wrap([$class: 'TimestamperBuildWrapper']) {
+    println "test01"
+    println pipeline.getBranch()
+  }
 }
