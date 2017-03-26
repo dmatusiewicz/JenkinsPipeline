@@ -1,4 +1,4 @@
-@Library('Common') _
+@Library('github.com/dmatusiewicz/CommonPipelineLibrary@master')
 import com.github.dmatusiewcz.jenkins.pipeline.common.*
 
 def pipeline = new Pipeline()
