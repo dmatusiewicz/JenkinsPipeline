@@ -1,5 +1,6 @@
 @Library('Common') _
 import com.github.dmatusiewcz.jenkins.pipeline.common.*
+import static com.github.dmatusiewcz.jenkins.pipeline.common.check_out_gitlab_repo
 
 def pipeline = new Pipeline()
 
