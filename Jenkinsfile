@@ -2,7 +2,7 @@
 import common.Pipeline
 
 
-def pipeline = new Pipeline2()
+def pipeline = new Pipeline()
 pipeline.setBranch("TestBranchName")
 println pipeline.getBranch()
 
