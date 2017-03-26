@@ -7,6 +7,6 @@ node {
   wrap([$class: 'TimestamperBuildWrapper']) {
     pipeline.setBranch("TestBranchName")
     println pipeline.getBranch()
-    // pipeline.getRepo('4768b2b5-75fe-4da2-a71e-a15f954684eb','https://github.com/dmatusiewicz/CommonPipelineLibrary')
+    pipeline.getRepo('4768b2b5-75fe-4da2-a71e-a15f954684eb','https://github.com/dmatusiewicz/CommonPipelineLibrary')
   }
 }
