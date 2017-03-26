@@ -1,11 +1,11 @@
 // @Library('Common') _
 // import common.Pipeline
 
-class Pipeline2{
+class Pipeline2 {
   String branch
 }
 
-def pipeline = new Pipeline()
+def pipeline = new Pipeline2()
 pipeline.setBranch("TestBranchName")
 println pipeline.getBranch()
 
