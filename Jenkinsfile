@@ -1,9 +1,5 @@
-// @Library('Common') _
-// import common.Pipeline
-
-class Pipeline2 implements Serializable {
-  String branch
-}
+@Library('Common') _
+import common.Pipeline
 
 
 def pipeline = new Pipeline2()
@@ -12,4 +8,5 @@ println pipeline.getBranch()
 
 node {
   println "test01"
+  println pipeline.getBranch()
 }
